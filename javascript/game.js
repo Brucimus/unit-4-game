@@ -52,12 +52,21 @@ if (userGuessValue === targetNum) {
 }
 
 //display wins on html
+var htmlWins = 
+    "<p>Wins: " + wins + "</p>";
 
+document.querySelector("#wins").innerHTML = htmlWins;
 
 //display losses on html
+var htmlLosses = 
+    "<p>Losses: " + losses + "</p>";
 
+document.querySelector("#losses").innerHTML = htmlLosses;
 
 //display target number on html
+var htmlCurrentValue = 
+    "<p>Current Value: " + userGuessValue + "</p>";
 
+document.querySelector("#currentValue").innerHTML = htmlCurrentValue;
 
 //display user guess value
